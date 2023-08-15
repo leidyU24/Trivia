@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Trivia Star</title>
+  </head>
+  <body>
+    <div id="waterform">
+      <div class="quiz-container">
+        <div class="quiz-head flex-column">
+          <div class="quiz-title">
+            <img
+              src="https://logopond.com/logos/7cbefd1c803c7e9515ea4be59233da29.png"
+              alt=""
+            />
+          </div>
+          <div class="quiz-score">
+            <span>Completa las preguntas correctas: </span><span id="correct-score"></span>/<span id="total-questions"></span>
+          </div>
+        </div>
+
+        <div class="quiz-body">
+          <div class="quiz-question">
+            <h2 id="question"></h2>
+          </div>
+          <div>
+            <ul class="quiz-options"></ul>
+          </div>
+          <div id="result"></div>
+        </div>
+
+        <div class="quiz-foot">
+          <button type="button" id="check-answer">Comprobar respuesta</button>
+          <button type="button" id="play-again">Jugar de nuevo</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="questions.js"></script>
+  </body>
+</html>
